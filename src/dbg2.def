@@ -1,0 +1,17 @@
+LIBRARY dbg2 ;INITINSTANCE
+
+;DESCRIPTION '32-bit debug library'
+
+;CODE PRELOAD FIXED NONDISCARDABLE
+;DATA MULTIPLE NONSHARED PRELOAD READWRITE
+
+;SUBSYSTEM WINDOWS, 5.1
+
+EXPORTS
+  InitDbg                 @1
+  DbgAssert               @2
+  DbgSetReportMode        @3
+  DbgSetReportFile        @4
+  DbgGetFileVersion       @5
+  DbgWriteDump            @6
+  
